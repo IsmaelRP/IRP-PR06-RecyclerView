@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import com.example.ismael.irp_pr06_recyclerview.R;
 import com.example.ismael.irp_pr06_recyclerview.data.local.model.User;
-
 import androidx.annotation.NonNull;
 import androidx.core.view.ViewCompat;
 import androidx.recyclerview.widget.DiffUtil;
