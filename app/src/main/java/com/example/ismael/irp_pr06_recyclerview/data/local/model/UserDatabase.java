@@ -22,15 +22,6 @@ public class UserDatabase {
         return instance;
     }
 
-    public User queryUser(long id) {
-        for (User user: users) {
-            if (user.getId() == id) {
-                return user;
-            }
-        }
-        return null;
-    }
-
     private final AvatarDatabase avatarDatabase = AvatarDatabase.getInstance();
 
     private final ArrayList<User> users = new ArrayList<>(Arrays.asList(

@@ -1,7 +1,6 @@
 package com.example.ismael.irp_pr06_recyclerview.ui.list;
 
 import com.example.ismael.irp_pr06_recyclerview.data.local.model.UserDatabase;
-import com.example.ismael.irp_pr06_recyclerview.ui.user.UserActivityViewModel;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.ViewModel;

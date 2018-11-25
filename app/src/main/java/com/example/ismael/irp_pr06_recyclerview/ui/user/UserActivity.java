@@ -75,6 +75,8 @@ public class UserActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //b = DataBindingUtil.setContentView(this, R.layout.activity_user);
+        //  Al tener esta actividad un include a otro layout, no he conseguido que con el binding
+        //  de esta, tenga los del include también
         setContentView(R.layout.activity_user);
         getIntentData();
         initViews();
@@ -96,7 +98,7 @@ public class UserActivity extends AppCompatActivity {
         activity.startActivityForResult(intent, rcUser);
     }
 
-    public void getIntentData() {
+    private void getIntentData() {
         Intent intent = getIntent();
         if (intent != null) {
             if (intent.hasExtra(EXTRA_USER)) {
@@ -499,17 +501,24 @@ public class UserActivity extends AppCompatActivity {
             return;
         }
 
+        UpdateUser();
+        configureIntent();
+    }
+
+    private void configureIntent() {
+        Intent result = new Intent();
+        result.putExtra(EXTRA_USER, user);
+        setResult(RESULT_OK, result);
+        finish();
+    }
+
+    private void UpdateUser() {
         user.setAvatar(avatar);
         user.setName(txtName.getText().toString());
         user.setEmail(txtEmail.getText().toString());
         user.setPhone(txtPhonenumber.getText().toString());
         user.setAddress(txtAddress.getText().toString());
         user.setWeb(txtWeb.getText().toString());
-
-        Intent result = new Intent();
-        result.putExtra(EXTRA_USER, user);
-        setResult(RESULT_OK, result);
-        finish();
     }
 
     private boolean isFormValid() {

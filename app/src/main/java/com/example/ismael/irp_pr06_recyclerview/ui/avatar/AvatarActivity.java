@@ -25,7 +25,6 @@ public class AvatarActivity extends AppCompatActivity {
 
     @VisibleForTesting
     public static final String EXTRA_AVATAR = "EXTRA_AVATAR";
-    public static final String EXTRA_USER = "EXTRA_USER";
 
     private Avatar avatar;
 

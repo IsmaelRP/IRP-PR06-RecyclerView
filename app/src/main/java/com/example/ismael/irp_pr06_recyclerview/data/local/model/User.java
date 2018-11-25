@@ -6,7 +6,7 @@ import android.os.Parcelable;
 public class User implements Parcelable {
 
     private static long idCount = 1;
-    private static AvatarDatabase avatarDatabase = AvatarDatabase.getInstance();
+    private static final AvatarDatabase avatarDatabase = AvatarDatabase.getInstance();
     private long id;
     private String name;
     private String email;
@@ -32,10 +32,6 @@ public class User implements Parcelable {
 
     public long getId() {
         return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
     }
 
     public String getName() {

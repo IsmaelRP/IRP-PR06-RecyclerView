@@ -7,11 +7,6 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 public class UserActivityViewModel extends ViewModel {
 
-
-    public UserActivityViewModel() {
-
-    }
-
     private MutableLiveData<Avatar> avatar;
 
     public LiveData<Avatar> getAvatar() {

@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import com.example.ismael.irp_pr06_recyclerview.R;
-import com.example.ismael.irp_pr06_recyclerview.data.local.model.AvatarDatabase;
 import com.example.ismael.irp_pr06_recyclerview.data.local.model.User;
 import com.example.ismael.irp_pr06_recyclerview.data.local.model.UserDatabase;
 import com.example.ismael.irp_pr06_recyclerview.databinding.ActivityListBinding;

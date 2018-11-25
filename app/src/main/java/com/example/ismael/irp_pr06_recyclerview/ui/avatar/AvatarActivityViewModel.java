@@ -6,7 +6,7 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-class AvatarActivityViewModel extends ViewModel {
+public class AvatarActivityViewModel extends ViewModel {
 
     private MutableLiveData<Avatar> avatar;
 

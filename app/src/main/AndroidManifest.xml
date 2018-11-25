@@ -19,8 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.avatar.AvatarActivity" android:label="@string/avatar_label"/>
-        <activity android:name=".ui.userId.UserActivity" android:label="@string/user_label" />
-        <activity android:name=".ui.user.UserActivity" />
+        <activity android:name=".ui.user.UserActivity" android:label="@string/user_label" />
     </application>
 
 </manifest>

@@ -4,7 +4,7 @@
     <string name="user_label">Fill the form</string>
     <string name="main_invalid_data">Invalid data</string>
     <string name="main_save">Save</string>
-    <string name="main_saved_succesfully">Student saved successfully</string>
+    <!--<string name="main_saved_succesfully">Student saved successfully</string>   Sin uso, de momento   -->
     <string name="main_error_saving">Error saving user</string>
     <string name="avatar_select">Select</string>
 
